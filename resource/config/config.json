@@ -1,0 +1,53 @@
+{
+    "Reconstruction Config": {
+        "name": "",
+        "dbgEnable": false,
+        "filePath": "/data/model/",
+        "cachePath": "/data/cache/",
+        "steelangle": {
+            "ptParams": {
+                "valueX": [
+                    -1000.0,
+                    360.0
+                ],
+                "valueY": [
+                    0.0,
+                    0.0
+                ],
+                "valueZ": [
+                    650.0,
+                    1400.0
+                ]
+            },
+            "downSample": 0.75,
+            "outlierParams": {
+                "radius": 2.5,
+                "minPts": 3
+            },
+            "planeFitParams": {
+                "maxPlaneNum": 0,
+                "minInlierNum": 0,
+                "distanceThreshold": 1.5,
+                "maxIterations": 200
+            },
+            "holeArea": 2500.0,
+            "yoloParams": {
+                "scoreThres": 0.6,
+                "iouThres": 0.2,
+                "topk": 100,
+                "labelsNum": 2,
+                "postprocess": 0
+            },
+            "enginePath": "/resource/engine/yolov11_Segment.engine",
+            "radiusNeighbor": 10.0,
+            "lineFitParams": {
+                "maxLineNum": 0,
+                "minInlierNum": 0,
+                "distanceThreshold": 2.0,
+                "maxIterations": 200
+            },
+            "corrAngleTh": 15.0,
+            "corrdisTh": 10.0
+        }
+    }
+}

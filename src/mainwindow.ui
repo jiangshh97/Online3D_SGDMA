@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#303030;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 2ex;
+    padding-top: 2ex;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    color: white;
+    left: 5px;
+    padding:0 1px;
+}</string>
+          </property>
+          <property name="title">
+           <string>Point Cloud View</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_cloud"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 2ex;
+    padding-top: 2ex;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    color: white;
+    left: 5px;
+    padding:0 1px;
+}</string>
+          </property>
+          <property name="title">
+           <string>Image View</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="0" column="1">
+            <layout class="QGridLayout" name="gridLayout_image"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 2ex;
+    padding-top: 2ex;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    color: white;
+    left: 5px;
+    padding:0 1px;
+}</string>
+          </property>
+          <property name="title">
+           <string>Model View</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_model"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 2ex;
+    padding-top: 2ex;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    color: white;
+    left: 5px;
+    padding:0 1px;
+}</string>
+          </property>
+          <property name="title">
+           <string>Console Output</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTextEdit" name="textEdit_Console">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTextEdit {
+	border-width: 1px;
+	border-style: solid;
+	border-color:transparent;
+        color:white;
+	selection-background-color:rgb(236,116,64);
+}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+    color:white;
+    background-color:transparent;
+}
+
+QMenuBar::item {
+    padding: 4px 12px 4px 12px;
+    background-color:transparent;
+}</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    border: 1px solid grey;
+    background-color:transparent;
+    color:white;
+}
+
+QMenu::indicator {
+    width: 0px;
+}
+
+QMenu::item {
+    padding: 4px 12px 4px 12px;
+    background-color:transparent;
+}
+
+QMenu::item:selected {
+    background-color: lightblue;
+    color: black;
+}
+
+QMenu::item:checked {
+    background-color: lightblue;
+    color: black;
+}
+
+QMenu::item:disabled {
+    background-color: #404040;
+    color: gray;
+}</string>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_Importpcdfile"/>
+    <addaction name="action_Exportstlfile"/>
+   </widget>
+   <widget class="QMenu" name="menuAlgorithom">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    border: 1px solid grey;
+    background-color:transparent;
+    color:white;
+}
+
+QMenu::indicator {
+    width: 0px;
+}
+
+QMenu::item {
+    padding: 4px 12px 4px 12px;
+    background-color:transparent;
+}
+
+QMenu::item:selected {
+    background-color: lightblue;
+    color: black;
+}
+
+QMenu::item:checked {
+    background-color: lightblue;
+    color: black;
+}
+
+QMenu::item:disabled {
+    background-color: #404040;
+    color: gray;
+}</string>
+    </property>
+    <property name="title">
+     <string>Algorithom</string>
+    </property>
+    <addaction name="action_Reconstruction"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAlgorithom"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Importpcdfile"/>
+   <addaction name="separator"/>
+   <addaction name="action_Reconstruction"/>
+   <addaction name="separator"/>
+   <addaction name="action_Exportstlfile"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_Importpcdfile">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/resource/icon/Import.png</normaloff>:/resource/icon/Import.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import PCD</string>
+   </property>
+   <property name="toolTip">
+    <string>Import PCD</string>
+   </property>
+  </action>
+  <action name="action_Reconstruction">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/resource/icon/Model.png</normaloff>:/resource/icon/Model.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reconstruct Model</string>
+   </property>
+   <property name="toolTip">
+    <string>Reconstruct Model</string>
+   </property>
+  </action>
+  <action name="action_Exportstlfile">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/resource/icon/Export.png</normaloff>:/resource/icon/Export.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export STL</string>
+   </property>
+   <property name="toolTip">
+    <string>Export STL</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
