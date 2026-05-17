@@ -3,6 +3,5 @@
         <file>resource/icon/Import.png</file>
         <file>resource/icon/Model.png</file>
         <file>resource/icon/Export.png</file>
-        <file>resource/icon/Export1.png</file>
     </qresource>
 </RCC>
