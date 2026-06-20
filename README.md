@@ -1,3 +1,20 @@
+## Citation
+
+If you use this code or find our work helpful in your research, please consider citing:
+
+@ARTICLE{11536779,
+  author={Jiang, Shaohua and Wang, Huaming and Zhou, Mengqi and Luo, Qinyao and Li, Ruiqi and Hao, Linbo},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={An Online 3-D Modeling Method Based on Skeleton-Guided Decomposition and Model-Driven Assembly}, 
+  year={2026},
+  volume={75},
+  number={},
+  pages={5010414-5010414},
+  doi={10.1109/TIM.2026.3697025}
+  }
+
+Your citations are greatly appreciated and help support future research.
+
 ## Main UI
 ![Main UI](resource/ui_main.png)
 
